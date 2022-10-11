@@ -80,19 +80,19 @@ public class ServletEx3 extends HttpServlet{
 			// (동의 O인 경우)
 			// 수신할 이메일 : user01@naver.com
 		
-			out.printf("<h3>%s님 환영합니다.<h3>", inputId);
+			out.printf("<h3>%s님 환영합니다.</h3>", inputId);
 			
 			// checkbox는 별도의 value가 없을 때
 			// 체크 O : "on"
 			// 체크 X : null
 			
 			if(agree!=null) {
-				out.println("<h3>이메일 동의 수신 여부 : O<h3>");
+				out.println("<h3>이메일 동의 수신 여부 : O</h3>");
 				
-				out.printf("<h3>수신할 이메일 : %s<h3>", inputEmail);
+				out.printf("<h3>수신할 이메일 : %s</h3>", inputEmail);
 				
 			} else {
-				out.println("<h3>이메일 동의 수신 여부 : X<h3>");
+				out.println("<h3>이메일 동의 수신 여부 : X</h3>");
 			}
 
 			
