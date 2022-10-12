@@ -96,13 +96,40 @@
                     <th colspan="2">
                         <button>회원 가입</button>
                     </th>
-
             </tr>
 
         </table>
+    </form>
 
+    <hr>
 
+    <h3>자습-설문조사</h3>
 
+    <form action="/JSPProject/movie" method="POST">
+        <table>
+            <tr>
+                <th>아이디 : </th>
+                <td><input type="text" name="userId"></td>
+            </tr>
+            <tr>
+                <th>좋아하는 장르</th>
+                <td>
+                    드라마<input type="checkbox" name="movie" value="드라마">
+                    스릴러<input type="checkbox" name="movie" value="스릴러">
+                    로맨스<input type="checkbox" name="movie" value="로맨스">
+                    <br>
+                    코믹<input type="checkbox" name="movie" value="코믹">
+                    액션<input type="checkbox" name="movie" value="액션">
+                    판타지/SF<input type="checkbox" name="movie" value="SF">
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <button>설문 작성 완료</button>
+                </th>
+            </tr>
+        </table>
     </form>
 
 </body>
