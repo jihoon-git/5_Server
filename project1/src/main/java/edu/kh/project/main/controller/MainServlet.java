@@ -29,7 +29,7 @@ public class MainServlet extends HttpServlet{
 			// key = "boardTypeMap"
 			// value = boardTypeMap가 참조하는 객체를 세팅
 			ServletContext application =req.getServletContext();
-			req.setAttribute("boardTypeMap", boardTypeMap);
+			application.setAttribute("boardTypeMap", boardTypeMap);
 			
 			// main.jsp로 요청 위임
 			RequestDispatcher dispatcher
